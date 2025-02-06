@@ -10,7 +10,7 @@ setUnixTime()
 if not getgenv().yetexecuted then
     getgenv().yetexecuted = true
     local success, errorMsg = pcall(function()
-        loadstring(game:HttpGet("https://get-eight-bits.greenskyisbad.workers.dev/?script=rivalsv3.lua"))()
+        loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv3.lua"))()
     end)
 
     if not success then
