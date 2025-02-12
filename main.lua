@@ -23,10 +23,10 @@ if not getgenv().yetexecuted then
             })
         end
 
-        sendNotification("Error", "Server is updating..", 56)
+        sendNotification("Error", "Script is paused..", 56)
 		sendNotification("Info", "Currently you cant use 8BIT. For more info join discord. Link copied to clipboard.", 56)
-		wait(2222)
-        Players.LocalPlayer:Kick("Working on server, please be patient. After the server is online, the script will start working again.")
+		wait(30)
+        Players.LocalPlayer:Kick("Currently going through banwave, please be patient. After i fix it, the script will start working again.")
     end
 else
     function sendNotification(title, message, duration)
