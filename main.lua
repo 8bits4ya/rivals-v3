@@ -10,7 +10,7 @@ setUnixTime()
 if not getgenv().yetexecuted then
     getgenv().yetexecuted = true
     local success, errorMsg = pcall(function()
-        loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=nul.lua"))()
+        loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4.lua"))()
     end)
 
     if not success then
@@ -24,9 +24,9 @@ if not getgenv().yetexecuted then
         end
 
         sendNotification("Error", "Script is paused..", 56)
-		sendNotification("Info", "Currently you cant use 8BIT. For more info join discord. Link copied to clipboard.", 56)
+		sendNotification("Info", "Script is online but cannot connect to server.", 56)
 		wait(30)
-        Players.LocalPlayer:Kick("Currently going through banwave, please be patient. After i fix it, the script will start working again.")
+        Players.LocalPlayer:Kick("Restart roblox and try again.")
     end
 else
     function sendNotification(title, message, duration)
