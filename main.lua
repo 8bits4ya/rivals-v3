@@ -14,7 +14,7 @@ if not getgenv().yetexecuted then
     local bindable = Instance.new("BindableFunction")
     function bindable.OnInvoke(buttonPressed)
         if buttonPressed == "FULL" then
-            loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4f.lua"))()
+            loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4.lua"))()
         elseif buttonPressed == "Feather" then
             loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4.lua"))()
         end
