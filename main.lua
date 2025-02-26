@@ -13,22 +13,22 @@ if not getgenv().yetexecuted then
 
     local bindable = Instance.new("BindableFunction")
     function bindable.OnInvoke(buttonPressed)
-        if buttonPressed == "FULL" then
+        if buttonPressed == "Yes" then
             loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4.lua"))()
-        elseif buttonPressed == "Feather" then
-            loadstring(game:HttpGet("https://8bitsforya.vercel.app/api/scripts?script=rivalsv4.lua"))()
+        elseif buttonPressed == "No" then
+            print("Ok")
         end
     end
 
     local success, errorMsg = pcall(function()
         game.StarterGui:SetCore("SendNotification", {
-            Title = "Choose Script",
-            Text = "Select FULL or Feather",
+            Title = "Load script ?",
+            Text = "Press yes to load",
             Icon = "rbxassetid://135755849962682",
             Duration = 20,
             Callback = bindable,
-            Button1 = "FULL",
-            Button2 = "Feather"
+            Button1 = "Yes",
+            Button2 = "No"
         })
     end)
 
