@@ -14,7 +14,7 @@ if not getgenv().yetexecuted then
     local bindable = Instance.new("BindableFunction")
     function bindable.OnInvoke(buttonPressed)
         if buttonPressed == "Yes" then
-            loadstring(game:HttpGet("https://gist.githubusercontent.com/8bits4ya/104b2a4fc2b5d8e3e458904f825471ed/raw/21a563f1f16d4942e5fd5e7f52d75b5ba7fa6d3d/gistfile1.txt"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/8bits4ya/rivals-v3/refs/heads/main/hopper.lua"))()
         elseif buttonPressed == "No" then
             print("Ok")
         end
